@@ -59,10 +59,14 @@ export default {
         email: this.email,
         password: this.password
       }
+      console.log(user);
+      console.log(regEmail.test(user.email))
+      console.log(this._emitTip('请输入正确的邮箱！'))
       if (!regEmail.test(user.email)) {
         this._emitTip('请输入正确的邮箱！')
         return
       }
+      
       if (user.password.length < 6) {
         this._emitTip('密码至少需要6位！')
         return
