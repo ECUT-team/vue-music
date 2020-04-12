@@ -1,14 +1,15 @@
 <template>
   <div>
-    <TabBar></TabBar>
+    <!-- <TabBar></TabBar> -->
+    <Home />
   </div>
 </template>
 
 <script>
-import TabBar from "./components/TabBar/TabBar";
+import Home from "./components/Home/Home";
 export default {
   components: {
-    TabBar
+    Home
   }
 };
 </script>
